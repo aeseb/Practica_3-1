@@ -14,8 +14,7 @@ commie.tuNombreEs("Commie");
 pincelDeSebas.tusCerdasSon("sinteticas.");
 commie.tusCerdasSon("naturales");
 
-pincelDeSebas.cerdasIndicadas(false);
-
+pincelDeSebas.tusCerdasSonNaturales(false);
 
 /** Flujo Teclado de PC **/
 redragon.tuNombreEs("Preferido.");
@@ -24,7 +23,7 @@ logitech.tuNombreEs("Nocturno");
 redragon.tusTeclasSon("mecanico.");
 logitech.tusTeclasSon("membrana");
 
-logitech.teclaS(false);
+logitech.sistemaDeMembrana(false);
 
 
 //Flujo de salida por consola
@@ -35,11 +34,11 @@ console.log("---------------------");
 
 console.log(pincelDeSebas.pincelNombre());
 console.log(pincelDeSebas.cerdasTipo());
-console.log(pincelDeSebas.pintaAcuarela());
+pincelDeSebas.pintaAcuarela();
 console.log("---------");
 console.log(commie.pincelNombre());
 console.log(commie.cerdasTipo());
-console.log(commie.pintaAcuarela());
+commie.pintaAcuarela();
 
 console.log("-------------------");
 console.log("Clase Teclado de PC");
@@ -47,10 +46,10 @@ console.log("-------------------");
 
 console.log(redragon.tecladoNombre());
 console.log(redragon.sistemaTipo());
-console.log(redragon.cualidadTipeo());
+redragon.cualidadTipeo();
 console.log("---------");
 console.log(logitech.tecladoNombre());
 console.log(logitech.sistemaTipo());
-console.log(logitech.cualidadTipeo());
+logitech.cualidadTipeo();
 
 console.log("---------FIN---------");

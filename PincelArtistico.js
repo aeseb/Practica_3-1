@@ -7,15 +7,10 @@ class  PincelArtistico{
     cerdasNaturales = true;
 
     //Comportmiento/metodo
-
     /**
      * Funcion que devuelve dos strigs
      * segun dos estados booleanos: TRUE o FALSE.
      */
-
-    /*Por alguna razon que no llego a ver,
-    luego de llamar a esta funcion se ve 
-    reflejado un undefined en la consola*/
     pintaAcuarela(){
         if(this.cerdasNaturales){
             console.log("Me encantan las acuarelas!! :D");
@@ -24,13 +19,13 @@ class  PincelArtistico{
             console.log("No soy muy bueno con la acuarela :[");
         }
     }
-    cerdasIndicadas(cambioValor){
+    tusCerdasSonNaturales(cambioValor){
         this.cerdasNaturales = cambioValor;
     }
 
    /**
-    * Pido el nombre
-    * @returns el nombre de PincelArtistico
+    * Pido el nombre de PincelArtistico
+    * @returns el nombre 
     */
     pincelNombre(){
        return "Mi nombre es " + this.nombre;

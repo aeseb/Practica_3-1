@@ -4,30 +4,24 @@ class TecladoPc {
 
     //Estado/caracteristica/campo
     nombre = "por def";
-    sistemaTeclas = "por def"
-    tipeo = true;
-    //cerdasNaturales = true;
-
+    tecnologia = "por def"
+    sistemaTeclas = true;
+    
     //Comportmiento/metodo
-
     /**
      * Funcion que devuelve dos strigs
      * segun dos estados booleanos: TRUE o FALSE.
      */
-
-    /*Por alguna razon que no llego a ver,
-    luego de llamar a esta funcion se ve 
-    reflejado un undefined en la consola*/
     cualidadTipeo() {
-        if (this.tipeo) {
+        if (this.sistemaTeclas) {
             console.log("Valoro la velocidad de respuesta.");
         }
         else {
             console.log("Valoro el tipeo silencioso.");
         }
     }
-    teclaS(tipeo) {
-        this.tipeo = tipeo;
+    sistemaDeMembrana(tipeo) {
+        this.sistemaTeclas = tipeo;
     }
 
     /**
@@ -46,10 +40,10 @@ class TecladoPc {
      * @returns sitema de teclas
      */
     sistemaTipo() {
-        return "Soy un teclado de tipo " + this.sistemaTeclas;
+        return "Soy un teclado de tipo " + this.tecnologia;
     }
     tusTeclasSon(teclas) {
-        this.sistemaTeclas = teclas;
+        this.tecnologia = teclas;
     }
 }
 
