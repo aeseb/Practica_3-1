@@ -4,8 +4,8 @@ const PincelArtistico = require("./PincelArtistico");
 //identidad
 const pincelDeSebas = new PincelArtistico();
 const commie = new PincelArtistico();
-const Preferido = new tecladoPc();
-const Nocturno = new tecladoPc();
+const preferido = new tecladoPc();
+const nocturno = new tecladoPc();
 
 /** Flujo PincelArtistico **/
 pincelDeSebas.tuNombreEs("Pincel de sebas.");
@@ -17,13 +17,13 @@ commie.tusCerdasSon("naturales");
 pincelDeSebas.tusCerdasSonNaturales(false);
 
 /** Flujo Teclado de PC **/
-Preferido.tuNombreEs("Preferido.");
-Nocturno.tuNombreEs("Nocturno");
+preferido.tuNombreEs("Preferido.");
+nocturno.tuNombreEs("Nocturno");
 
-Preferido.tusTeclasSon("mecanico.");
-Nocturno.tusTeclasSon("membrana");
+preferido.tusTeclasSon("mecanico.");
+nocturno.tusTeclasSon("membrana");
 
-Nocturno.sistemaDeMembrana(false);
+nocturno.sistemaMecanico(false);
 
 
 //Flujo de salida por consola
@@ -44,12 +44,12 @@ console.log("-------------------");
 console.log("Clase Teclado de PC");
 console.log("-------------------");
 
-console.log(Preferido.tecladoNombre());
-console.log(Preferido.sistemaTipo());
-Preferido.cualidadTipeo();
+console.log(preferido.tecladoNombre());
+console.log(preferido.sistemaTipo());
+preferido.cualidadTipeo();
 console.log("---------");
-console.log(Nocturno.tecladoNombre());
-console.log(Nocturno.sistemaTipo());
-Nocturno.cualidadTipeo();
+console.log(nocturno.tecladoNombre());
+console.log(nocturno.sistemaTipo());
+nocturno.cualidadTipeo();
 
 console.log("---------FIN---------");

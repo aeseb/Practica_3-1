@@ -20,7 +20,7 @@ class TecladoPc {
             console.log("Valoro el tipeo silencioso.");
         }
     }
-    sistemaDeMembrana(tipeo) {
+    sistemaMecanico(tipeo) {
         this.sistemaTeclas = tipeo;
     }
 
