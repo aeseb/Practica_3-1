@@ -4,8 +4,8 @@ const PincelArtistico = require("./PincelArtistico");
 //identidad
 const pincelDeSebas = new PincelArtistico();
 const commie = new PincelArtistico();
-const redragon = new tecladoPc();
-const logitech = new tecladoPc();
+const Preferido = new tecladoPc();
+const Nocturno = new tecladoPc();
 
 /** Flujo PincelArtistico **/
 pincelDeSebas.tuNombreEs("Pincel de sebas.");
@@ -17,13 +17,13 @@ commie.tusCerdasSon("naturales");
 pincelDeSebas.tusCerdasSonNaturales(false);
 
 /** Flujo Teclado de PC **/
-redragon.tuNombreEs("Preferido.");
-logitech.tuNombreEs("Nocturno");
+Preferido.tuNombreEs("Preferido.");
+Nocturno.tuNombreEs("Nocturno");
 
-redragon.tusTeclasSon("mecanico.");
-logitech.tusTeclasSon("membrana");
+Preferido.tusTeclasSon("mecanico.");
+Nocturno.tusTeclasSon("membrana");
 
-logitech.sistemaDeMembrana(false);
+Nocturno.sistemaDeMembrana(false);
 
 
 //Flujo de salida por consola
@@ -44,12 +44,12 @@ console.log("-------------------");
 console.log("Clase Teclado de PC");
 console.log("-------------------");
 
-console.log(redragon.tecladoNombre());
-console.log(redragon.sistemaTipo());
-redragon.cualidadTipeo();
+console.log(Preferido.tecladoNombre());
+console.log(Preferido.sistemaTipo());
+Preferido.cualidadTipeo();
 console.log("---------");
-console.log(logitech.tecladoNombre());
-console.log(logitech.sistemaTipo());
-logitech.cualidadTipeo();
+console.log(Nocturno.tecladoNombre());
+console.log(Nocturno.sistemaTipo());
+Nocturno.cualidadTipeo();
 
 console.log("---------FIN---------");
